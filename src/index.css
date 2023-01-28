@@ -1,13 +1,215 @@
-body {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Pangolin&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #303841 #e7e9e9;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #e7e9e9;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #303841;
+  border-radius: 10px;
+  border: 3px solid #e7e9e9;
+}
+.logo-all {
+  font-family: "Pangolin", cursive !important;
+  font-weight: 200;
+}
+.formContainer {
+  background: #4a5a6c;
+  @apply h-screen flex items-center justify-center overflow-hidden;
+}
+.Messages {
+  @apply h-[calc(100%-106.5px)] bg-[#e7e9e9] p-[10px]  overflow-scroll overflow-x-hidden;
+}
+.shad {
+  -webkit-box-shadow: 0px 9px 14px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 9px 14px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 9px 14px 0px rgba(0, 0, 0, 0.75);
+}
+.formWrapper {
+  background-color: #f2f7f7;
+  padding: 20px 50px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.messageImg {
+  @apply bg-white rounded-lg;
+}
+.ownerImg {
+  @apply bg-main rounded-lg;
+}
+
+.formWrapper input {
+  border: none;
+  border-bottom: 0.5px solid #544179;
+  outline: none;
+  @apply p-[15px] w-[250px] placeholder:text-gray-400;
+}
+.formWrapper .logo {
+  color: #544179;
+  @apply font-bold text-2xl;
+}
+.formWrapper .title {
+  color: #544179;
+  @apply text-sm;
+}
+.formWrapper form {
+  @apply flex flex-col gap-3;
+}
+.formWrapper form input {
+  @apply bg-[#f2f7f7];
+}
+.search {
+  border-bottom: 0.5px solid rgb(112, 110, 110);
+}
+.chatNav {
+  border-bottom: 1px solid rgb(190, 190, 190);
+}
+.message {
+  @apply flex gap-5 mb-5;
+}
+.message p {
+  padding: 10px 20px;
+  border-top-left-radius: 0;
+}
+.owner {
+  @apply flex-row-reverse;
+}
+
+.owner p {
+  border-radius: 8px;
+  padding: 10px 20px;
+  border-top-right-radius: 0;
+  @apply bg-[#54d38a] text-[#fff];
+}
+
+.scrollBar {
+  scrollbar-width: auto;
+  scrollbar-color: #363e47 #363e47;
+}
+
+.scrollBar::-webkit-scrollbar {
+  width: 10px;
+}
+
+.scrollBar::-webkit-scrollbar-track {
+  background: #363e47;
+}
+
+.scrollBar::-webkit-scrollbar-thumb {
+  background-color: #363e47;
+  border-radius: 0px;
+  border: 0px solid #ffffff;
+}
+
+.owner .content {
+  @apply items-end;
+}
+
+.transform-translate {
+  transform: translate(-50%, -50%);
+}
+.gradient {
+  background: #00306e;
+  background: repeating-radial-gradient(
+    ellipse farthest-corner at center center,
+    #00306e 0%,
+    #ff308a 50%,
+    #00ffff 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.gradient1 {
+  background: #22196e;
+  background: linear-gradient(to top, #22196e 0%, #9e037f 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.start {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  @apply bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500;
+}
+.Welcome-font {
+  font-family: "Pacifico", cursive;
+}
+.margin {
+  position: absolute;
+  width: 385px;
+  height: 443px;
+  bottom: 0px;
+  right: 25px;
+
+  background: #ffffff;
+  -webkit-box-shadow: 0px 0px 52px -7px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 52px -7px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 52px -7px rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+}
+.ImageC {
+  position: absolute;
+  width: 341px;
+  height: 327px;
+  left: 22px;
+  top: 20px;
+
+  border-radius: 8px;
+}
+.imagePreview {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 311px;
+  height: 33px;
+  left: 22px;
+  top: 382px;
+
+  border: 1px solid #000000;
+  border-radius: 4px;
+}
+.sendBtn {
+  position: absolute;
+
+  right: 15px;
+
+  top: 380px;
+}
+.oval {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 680px) {
+  .margin {
+    width: 300px;
+  }
+  .imagePreview {
+    width: 210px;
+  }
+  .ImageC {
+    width: 255px;
+  }
 }
