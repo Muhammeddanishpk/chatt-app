@@ -2,7 +2,7 @@ import { doc, onSnapshot } from "firebase/firestore";
 import React, { useContext, useEffect, useState } from "react";
 import { ChatAuthContext } from "../context/chatContext";
 import { db } from "../firebase";
-import ImageConsole from "./ImageConsole";
+ 
 import Message from "./Message";
 import Welcome from "./Welcome";
 

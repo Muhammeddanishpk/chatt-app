@@ -1,7 +1,7 @@
 import React from 'react'
-import { Audio, MutatingDots, ProgressBar, Puff } from 'react-loader-spinner'
+import {    ProgressBar   } from 'react-loader-spinner'
  
-function Spinner() {
+function  Spinner() {
   return (
     <div className='bg-[#03030341] absolute top-0 left-0 w-full h-screen flex justify-center items-center flex-row'>
      <ProgressBar

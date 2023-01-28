@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, {} from "react";
 import Ovalspinner from "./Ovalspinner";
 
 function ImageConsole({imgUrl,setText,text,func ,loading}) {

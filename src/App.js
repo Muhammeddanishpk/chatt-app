@@ -6,7 +6,7 @@ import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import { useContext } from "react";
 import { AuthContext } from "./context/auth";
 import Spinner from "./components/Spinner";
-import Example from "./components/Dropdown";
+ 
  
 function App() {
   const { currentUser } = useContext(AuthContext);

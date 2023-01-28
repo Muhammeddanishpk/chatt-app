@@ -57,7 +57,7 @@ export default function Drop({setUsername,handleSearch,username }) {
         <Menu.Items className="absolute right-1 z-10 mt-2 w-56 origin-top-right rounded-md bg-gray-800 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
           <div className="py-1">
              {user.map((item,index)=>{
-              return( <Menu.Item as="div" className={currentUser.uid == item.uid  ? 'hidden':"block"}>
+              return( <Menu.Item as="div" className={currentUser.uid === item.uid  ? 'hidden':"block"}>
                 {({ active }) => (
                   <span
                   

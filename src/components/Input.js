@@ -2,7 +2,7 @@ import {
   arrayUnion,
   doc,
   serverTimestamp,
-  setDoc,
+ 
   Timestamp,
   updateDoc,
 } from "firebase/firestore";
@@ -13,8 +13,7 @@ import { db, storage } from "../firebase";
 import { v4 as uuid } from "uuid";
 import { getDownloadURL, ref, uploadBytesResumable } from "firebase/storage";
 import EmojiPicker from "emoji-picker-react";
-import { autoFocusSearch } from "emoji-picker-react";
-import { Theme } from 'emoji-picker-react';
+ 
 import ImageConsole from "./ImageConsole";
 
 function Input({ welcome,showPicker,setShowPicker,setImage,setText,text,setSendFunc }) {

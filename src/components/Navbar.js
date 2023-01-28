@@ -4,7 +4,7 @@ import { AuthContext } from "../context/auth";
 import { auth } from "../firebase";
 import './Navbar.css'
 import Logo from '../Images/chatty.png'
-import { Link } from "react-router-dom";
+ 
 function Navbar() {
   const [alert,setAlert]= useState(false)
   const {currentUser} = useContext(AuthContext)
