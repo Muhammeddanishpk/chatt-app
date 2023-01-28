@@ -3,13 +3,13 @@ import React, { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../context/auth";
 import { ChatAuthContext } from "../context/chatContext";
 import { db } from "../firebase";
-import Lgo from "../Images/chatty.png";
+ 
 
 function Chats({ set, setWelcome }) {
   const { currentUser } = useContext(AuthContext);
   const { dispatch } = useContext(ChatAuthContext);
   const [chats, setChats] = useState([]);
-  const [noti, setNoti] = useState("");
+  
 
   const hideChat = () => {
     setWelcome(true);

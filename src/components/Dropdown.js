@@ -1,6 +1,6 @@
 import { Fragment, useContext, useState } from "react";
 import { Menu, Transition } from "@headlessui/react";
-import { auth, db } from "../firebase";
+import { db } from "../firebase";
 import { collection, getDocs } from "firebase/firestore";
 import { AuthContext } from "../context/auth";
 // import { ChevronDownIcon } from '@heroicons/react/20/solid'
