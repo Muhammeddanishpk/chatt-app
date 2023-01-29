@@ -1,39 +1,6 @@
 {
-
   "name": "Chatty",
   "short_name": "Chatty",
-  "screenshots": [
-    {
-      "src": "./login.png",
-      "sizes": "305x619",
-      "type": "image/png"
-    },
-    {
-      "src": "./registere.png",
-      "sizes": "305x619",
-      "type": "image/png"
-    },
-    {
-      "src": "./homepage.png",
-      "sizes": "305x619",
-      "type": "image/png"
-    },
-    {
-      "src": "./chatt.png",
-      "sizes": "305x619",
-      "type": "image/png"
-    },
-    {
-      "src": "./emoj.png",
-      "sizes": "305x619",
-      "type": "image/png"
-    },
-    {
-      "src": "./imageconsole.png",
-      "sizes": "305x619",
-      "type": "image/png"
-    }
-  ],
   "icons": [
     {
       "src": "./android-chrome-96x96.png",
@@ -61,7 +28,7 @@
     }
   ],
 
-  "description": "Chatty makes it easy and fun to stay close to your favourite people.",
+ 
   "display": "standalone",  
   "start_url": ".",
   "theme_color": "#54d38a",
