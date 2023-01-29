@@ -32,35 +32,36 @@
     "screenshots":[
         {
             "src": "./login.png",
-            "size":"305x619",
+            "sizes":"305x619",
             "type":"image/png"
         },
         {
             "src": "./registere.png",
-            "size":"305x619",
+            "sizes":"305x619",
             "type":"image/png"
         },
         {
             "src": "./homepage.png",
-            "size":"305x619",
+            "sizes":"305x619",
             "type":"image/png"
         },
         {
             "src": "./chatt.png",
-            "size":"305x619",
+            "sizes":"305x619",
             "type":"image/png"
         },
         {
             "src": "./emoj.png",
-            "size":"305x619",
+            "sizes":"305x619",
             "type":"image/png"
         },
         {
             "src": "./imageconsole.png",
-            "size":"305x619",
+            "sizes":"305x619",
             "type":"image/png"
         }
     ],
+    "description":"Chatty makes it easy and fun to stay close to your favourite people.",
 
     "display": "standalone",
     "theme_color": "#54d38a",
