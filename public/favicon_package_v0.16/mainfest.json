@@ -1,4 +1,5 @@
 {
+  "start_url": ".",
   "name": "Chatty",
   "short_name": "Chatty",
   "icons": [
@@ -30,7 +31,7 @@
 
  
   "display": "standalone",  
-  "start_url": ".",
+ 
   "theme_color": "#54d38a",
   "background_color": "#363e47"
 }
