@@ -3,20 +3,13 @@ import React, { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../context/auth";
 import { ChatAuthContext } from "../context/chatContext";
 import { db } from "../firebase";
- 
+import NODP from '../Images/noDp.png'
 
 function Chats({ set, setWelcome }) {
   const { currentUser } = useContext(AuthContext);
   const { dispatch } = useContext(ChatAuthContext);
   const [chats, setChats] = useState([]);
-  
 
-  const hideChat = () => {
-    setWelcome(true);
-    set(false);
-  };
- 
-  
   useEffect(() => {
     const getChats = () => {
       const unsub = onSnapshot(doc(db, "userChats", currentUser.uid), (doc) => {
@@ -32,12 +25,17 @@ function Chats({ set, setWelcome }) {
   const handleSelect = (user, us) => {
     dispatch({ type: "CHANGE_USER", payload: user });
   };
+  function hideChat() {
+    setWelcome(true);
+    set(false);
+  }
+ 
   return (
     <div
       className="chats scrollBar overflow-y-scroll overflow-x-hidden max-h-[80%] ease-in duration-300"
-      onClick={hideChat}
+       onClick={hideChat}
     >
-      {Object.entries(chats)
+      {chats && Object.entries(chats)
         ?.sort((a, b) => b[1].date - a[1].date)
         .map((chat) => (
           <div
@@ -49,8 +47,8 @@ function Chats({ set, setWelcome }) {
           >
             <img
               className="w-[50px] h-[50px] rounded-full object-cover"
-              src={chat[1].userInfo.photoURL}
-              alt=""
+              src={chat[1].userInfo.photoURL || NODP} 
+              alt="no dp"
             />
             <div className="">
               <span

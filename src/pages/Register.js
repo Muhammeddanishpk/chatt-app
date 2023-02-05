@@ -28,7 +28,7 @@ function Register() {
  
       const date = new Date().getTime();
       const storageRef = ref(storage, `${displayName + date}`);
-
+       
       await uploadBytesResumable(storageRef, file).then(() => {
         getDownloadURL(storageRef).then(async (downloadURL) => {
           try {
@@ -84,8 +84,8 @@ function Register() {
               className=""
               alt=""
             />
-            <span className="font-semibold text-[#8da4f1] text-[12px]">
-              Add an Avatar
+            <span className="font-semibold border border-solid border-main cursor-pointer p-1 hover:border-[red] text-[#8da4f1] text-[12px]">
+              Choose profile image
             </span>
           </label>
           <button

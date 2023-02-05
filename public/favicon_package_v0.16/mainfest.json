@@ -1,37 +1,35 @@
-{
-  "start_url": ".",
-  "name": "Chatty",
-  "short_name": "Chatty",
-  "icons": [
-    {
-      "src": "./android-chrome-96x96.png",
-      "sizes": "96x96",
-      "type": "image/png",
-      "purpose": "any"
-    },
-    {
-      "src": "./chatty512.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any"
-    },
-    {
-      "src": "./chatty192.png",
-      "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "any"
-    },
-    {
-      "src": "./mascable",
-      "sizes": "196x196",
-      "type": "image/png",
-      "purpose": "maskable"
-    }
-  ],
+{    "start_url": ".",
+    "name": "Chatty",
+    "short_name": "Chatty",
+    "icons": [
+        {
+            "src": "./android-chrome-96x96.png",
+            "sizes": "96x96",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "./chatty512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "./chatty192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any"
+        }
+       ,
+        {
+            "src": "./mascable",
+            "sizes": "196x196",
+            "type": "image/png",
+            "purpose": "maskable"
+        }  
+    ],
 
- 
-  "display": "standalone",  
- 
-  "theme_color": "#54d38a",
-  "background_color": "#363e47"
+    "display": "standalone",
+    "theme_color": "#54d38a",
+    "background_color": "#363e47"
 }
