@@ -1,5 +1,6 @@
 {    "start_url": "/",
     "name": "Chatty",
+    "description":"A chattyapp is a mobile or web-based application that allows users to communicate in real-time through text, or image messages. , multimedia sharing, and emoji support, chat apps provide a fast and convenient way to stay in touch with friends, family, and colleagues. Many chat apps also offer end-to-end encryption to protect the privacy of users' communications. Whether you're sending quick updates, a chat app is a must-have tool for modern communication.",
     "short_name": "Chatty",
     "icons": [
         {
