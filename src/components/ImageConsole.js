@@ -5,15 +5,18 @@ function ImageConsole({imgUrl,setText,text,func ,loading}) {
  
 
   return (
-    <>
+    <div className="relative">
+   
     {imgUrl &&
-    <div className="margin  relative">
+   
+    <div className="margin  relative"> 
+     {loading && <Ovalspinner/>}
       <img
         className="ImageC object-cover"
         src={imgUrl ? URL.createObjectURL(imgUrl) : null}
         alt=""
       />
-      {loading && <Ovalspinner/>}
+      
         <input
           className="imagePreview p-2 placeholder:p-2"
           placeholder="Add a caption..."
@@ -27,7 +30,7 @@ function ImageConsole({imgUrl,setText,text,func ,loading}) {
           <span class="material-symbols-sharp text-3xl">send</span>
         </button>
     </div>}
-    </>
+    </div>
   );
 }
 
