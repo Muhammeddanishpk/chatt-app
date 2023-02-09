@@ -19,8 +19,7 @@ function Register() {
     const displayName = e.target[0].value;
     const email = e.target[1].value;
     const password = e.target[2].value;
-    const file = e.target[3].files[0];
-
+    const file = e.target[3].files[0] ;
     try {
  
       const res = await createUserWithEmailAndPassword(auth, email, password);
@@ -35,14 +34,17 @@ function Register() {
            
             await updateProfile(res.user, {
               displayName,
-              photoURL: downloadURL,
+ 
+
+                photoURL: file !== "" ? downloadURL:"https://i.pinimg.com/originals/ca/52/e6/ca52e6e168595f767c2121a68cc227b0.jpg",
+            
             });
           
             await setDoc(doc(db, "users", res.user.uid), {
               uid: res.user.uid,
               displayName,
               email,
-              photoURL: downloadURL,
+              photoURL: file !== "" ? downloadURL:"https://i.pinimg.com/originals/ca/52/e6/ca52e6e168595f767c2121a68cc227b0.jpg",
             });
 
              
