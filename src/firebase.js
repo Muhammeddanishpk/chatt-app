@@ -5,12 +5,12 @@ import { getFirestore } from "firebase/firestore";
 import {getStorage} from 'firebase/storage'
  
 const firebaseConfig = {
-  apiKey: "AIzaSyBC2tnHCayC5YEZecp4L5lXqU9LUOPGkX0",
-  authDomain: "chatty-1f70d.firebaseapp.com",
-  projectId: "chatty-1f70d",
-  storageBucket: "chatty-1f70d.appspot.com",
-  messagingSenderId: "1025421509291",
-  appId: "1:1025421509291:web:73eb40b8c31c7cbbb8adee"
+  apiKey: "AIzaSyDIVl-eitrJEUiIJx0a2rHu5ydn_BQCM8s",
+  authDomain: "chatty-app-4d707.firebaseapp.com",
+  projectId: "chatty-app-4d707",
+  storageBucket: "chatty-app-4d707.appspot.com",
+  messagingSenderId: "185563272100",
+  appId: "1:185563272100:web:31c48ae381a110b453a731"
 };
 
 
