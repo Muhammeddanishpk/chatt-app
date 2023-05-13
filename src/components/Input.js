@@ -43,9 +43,10 @@ function Input({ welcome,showPicker,setShowPicker,setImage,setText,text,setSendF
   };
   if (text.length !== 0) {
     var handleSend = async () => {
-      setLoader(true)
+     
       setText("");
       if (img) {
+         setLoader(true)
         const storageRef = ref(storage, uuid());
 
         await uploadBytesResumable(storageRef, img).then(() => {
