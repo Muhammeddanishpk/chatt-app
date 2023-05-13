@@ -32,7 +32,7 @@ export default function Drop({setUsername,handleSearch,username }) {
  }
    
   return (
-    <Menu as="div" className="my-3 mx-3  w-full relative inline-block text-left">
+    <Menu as="div" className="my-3 mx-3 max-h-[700px] overfow-y-scroll  w-full relative inline-block text-left">
       <div>
         <Menu.Button className="w-[100%] inline-flex  justify-center rounded-lg   bg-gray-800 px-4 py-2 text-sm font-medium text-gray-100 shadow-sm hover:bg-gray-800 focus:outline-none     ">
          <span className="start" >Start a new chat</span> 
