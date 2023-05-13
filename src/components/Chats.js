@@ -36,7 +36,7 @@ function Chats({ set, setWelcome }) {
        onClick={hideChat}
     >
       {chats && Object.entries(chats)
-        ?.sort((a, b) => b[1].date - a[1].date)
+        ?.sort((a, b) => a-b)
         .map((chat) => (
           <div
             onClick={() =>
