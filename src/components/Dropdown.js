@@ -55,7 +55,7 @@ export default function Drop({setUsername,handleSearch,username }) {
         leaveTo="transform opacity-0 scale-95"
       >
         <Menu.Items className="absolute right-1 z-10 mt-2 w-56 origin-top-right rounded-md bg-gray-800 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
-          <div className="py-1">
+          <div className="py-1 max-h-[500px] overflow-hidden overflow-y-scroll ">
              {user.map((item,index)=>{
               return( <Menu.Item as="div" className={currentUser.uid === item.uid  ? 'hidden':"block"}>
                 {({ active }) => (
